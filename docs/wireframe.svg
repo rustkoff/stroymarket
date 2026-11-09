@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="840" viewBox="0 0 1200 840" role="img" aria-labelledby="title desc">
+  <title id="title">Черновой wireframe учебного магазина стройматериалов</title>
+  <desc id="desc">Низкодетализированный макет главной страницы для широкого экрана и мобильного телефона.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f4f4f1}.panel{fill:#fff;stroke:#555;stroke-width:2}.soft{fill:#e8e8e3;stroke:#777;stroke-width:1.5}.line{stroke:#777;stroke-width:1.5}.txt{font:16px sans-serif;fill:#222}.small{font:13px sans-serif;fill:#333}.title{font:bold 22px sans-serif;fill:#222}.label{font:bold 15px sans-serif;fill:#444}
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="840"/>
+  <text class="title" x="40" y="40">СТРОЙМАРКЕТ · черновой макет главной страницы</text>
+  <text class="small" x="40" y="64">Низкая детализация: блоки показывают структуру, а не финальный визуальный стиль</text>
+
+  <text class="label" x="40" y="105">Широкий экран</text>
+  <rect class="panel" x="40" y="120" width="790" height="675" rx="8"/>
+  <rect class="soft" x="58" y="138" width="754" height="64" rx="4"/>
+  <rect class="panel" x="72" y="151" width="165" height="38" rx="3"/>
+  <text class="txt" x="86" y="176">ЛОГОТИП</text>
+  <text class="small" x="267" y="176">Каталог  ·  Калькулятор  ·  Контакты</text>
+  <rect class="panel" x="664" y="151" width="130" height="38" rx="3"/>
+  <text class="small" x="680" y="176">Корзина / Вход</text>
+
+  <rect class="soft" x="58" y="218" width="754" height="156" rx="4"/>
+  <text class="title" x="82" y="260">Материалы для вашего проекта</text>
+  <text class="small" x="82" y="289">Короткое описание магазина и понятный путь к выбору товара</text>
+  <rect class="panel" x="82" y="312" width="145" height="42" rx="3"/>
+  <text class="small" x="103" y="338">Открыть каталог</text>
+  <rect class="panel" x="645" y="240" width="140" height="110" rx="3"/>
+  <text class="small" x="666" y="287">Изображение</text>
+  <text class="small" x="680" y="307">(иллюстрация)</text>
+
+  <text class="label" x="62" y="407">Популярные товары · карточка ведёт к подробной странице</text>
+  <g>
+    <rect class="panel" x="58" y="422" width="238" height="146" rx="4"/>
+    <rect class="soft" x="70" y="434" width="214" height="64"/>
+    <text class="small" x="122" y="472">Фото товара</text>
+    <text class="small" x="76" y="522">Название · цена · единица</text>
+    <text class="small" x="76" y="548">Открыть товар →</text>
+    <rect class="panel" x="315" y="422" width="238" height="146" rx="4"/>
+    <rect class="soft" x="327" y="434" width="214" height="64"/>
+    <text class="small" x="379" y="472">Фото товара</text>
+    <text class="small" x="333" y="522">Название · цена · единица</text>
+    <text class="small" x="333" y="548">Открыть товар →</text>
+    <rect class="panel" x="572" y="422" width="238" height="146" rx="4"/>
+    <rect class="soft" x="584" y="434" width="214" height="64"/>
+    <text class="small" x="636" y="472">Фото товара</text>
+    <text class="small" x="590" y="522">Название · цена · единица</text>
+    <text class="small" x="590" y="548">Открыть товар →</text>
+  </g>
+
+  <rect class="soft" x="58" y="590" width="754" height="130" rx="4"/>
+  <text class="label" x="78" y="620">Калькулятор количества материала</text>
+  <text class="small" x="78" y="649">Материал [выбор]   Площадь/объём [поле]   Расход [ед./м²]</text>
+  <rect class="panel" x="78" y="666" width="138" height="38" rx="3"/>
+  <text class="small" x="95" y="691">Рассчитать</text>
+  <text class="small" x="240" y="691">Результат: количество и округление до упаковок</text>
+  <line class="line" x1="58" y1="740" x2="812" y2="740"/>
+  <text class="small" x="72" y="766">Подвал: контакты · часы работы · ссылки на основные разделы</text>
+
+  <text class="label" x="875" y="105">Мобильный экран</text>
+  <rect class="panel" x="875" y="120" width="285" height="675" rx="20"/>
+  <rect class="soft" x="891" y="145" width="253" height="62" rx="5"/>
+  <text class="small" x="910" y="173">ЛОГОТИП</text>
+  <text class="small" x="910" y="193">Меню / Корзина</text>
+  <rect class="soft" x="891" y="222" width="253" height="136" rx="4"/>
+  <text class="small" x="907" y="256">Материалы для</text>
+  <text class="small" x="907" y="277">вашего проекта</text>
+  <text class="small" x="907" y="307">Описание + переход</text>
+  <rect class="panel" x="907" y="321" width="133" height="27" rx="3"/>
+  <text class="small" x="916" y="340">Каталог</text>
+  <text class="label" x="899" y="390">Популярное · одна колонка</text>
+  <rect class="panel" x="891" y="405" width="253" height="91" rx="4"/>
+  <rect class="soft" x="901" y="415" width="73" height="70"/>
+  <text class="small" x="983" y="439">Фото, название</text>
+  <text class="small" x="983" y="461">цена и ссылка</text>
+  <rect class="panel" x="891" y="508" width="253" height="91" rx="4"/>
+  <rect class="soft" x="901" y="518" width="73" height="70"/>
+  <text class="small" x="983" y="542">Фото, название</text>
+  <text class="small" x="983" y="564">цена и ссылка</text>
+  <rect class="soft" x="891" y="611" width="253" height="133" rx="4"/>
+  <text class="small" x="907" y="639">Калькулятор</text>
+  <text class="small" x="907" y="663">Поля вертикально</text>
+  <text class="small" x="907" y="687">Кнопка и результат</text>
+  <text class="small" x="907" y="724">Подвал и навигация</text>
+</svg>
