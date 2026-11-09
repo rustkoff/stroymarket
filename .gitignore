@@ -218,3 +218,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local store data and verification tooling
+node_modules/
+data/
+*.db
+*.db-shm
+*.db-wal
+.hoplite/attachments/
+.hoplite/runtime/
+.hoplite/artifacts/
