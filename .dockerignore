@@ -1,0 +1,9 @@
+.git
+.hoplite
+.venv
+node_modules
+data
+__pycache__
+*.db
+*.sqlite*
+tests

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Строймаркет — учебный магазин строительных материалов. Каталог, расчёт расхода и подбор материалов для вашего проекта."
+    />
+    <title>Каталог материалов · Строймаркет</title>
+    <link rel="icon" href="/assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body data-page="catalog">
+    <a class="skip" href="#main">К содержимому</a>
+    <div class="topbar">
+      <div class="container">
+        <span>Москва · Учебный проект</span
+        ><span
+          >Пн–Сб, 08:00–20:00
+          <a href="tel:+74955550114"
+            >+7&nbsp;(495)&nbsp;555&#8209;01&#8209;14</a
+          ></span
+        >
+      </div>
+    </div>
+    <header class="header">
+      <div class="container header-main">
+        <a class="brand" href="/index.html" aria-label="Строймаркет — главная"
+          ><img
+            src="/assets/logo.svg"
+            width="40"
+            height="40"
+            alt="Логотип: строительные блоки"
+          /><span
+            >строймаркет<span class="brand-sub">ОСНОВА ВАШИХ ИДЕЙ</span></span
+          ></a
+        >
+        <form action="/catalog.html" class="header-search" role="search">
+          <label class="sr-only" for="header-search">Найти стройматериалы</label
+          ><input
+            type="text"
+            id="header-search"
+            name="q"
+            placeholder="Что нужно для вашего проекта?"
+          /><button type="submit" aria-label="Искать">↗</button>
+        </form>
+        <div class="header-actions">
+          <a href="/account.html">Личный кабинет</a
+          ><a href="/cart.html" class="cart-link"
+            >Корзина <span id="cart-count">0</span></a
+          >
+        </div>
+      </div>
+      <nav class="container nav" aria-label="Основная навигация">
+        <a href="/index.html">Главная</a
+        ><a href="/catalog.html" aria-current="page">Каталог</a
+        ><a href="/product.html?id=cement">Товар</a
+        ><a href="/calculator.html">Калькулятор</a
+        ><a href="/contacts.html">Контакты</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="container section">
+        <p class="breadcrumbs"><a href="/index.html">Главная</a> / Каталог</p>
+        <div class="page-heading">
+          <div>
+            <p class="eyebrow">ВСЁ ДЛЯ ВАШЕГО ПРОЕКТА</p>
+            <h1>Каталог материалов</h1>
+          </div>
+          <span id="product-count" class="muted"></span>
+        </div>
+        <form id="filters" class="filter-panel" novalidate>
+          <div class="field">
+            <label for="search">Название материала</label
+            ><input
+              type="text"
+              id="search"
+              name="search"
+              placeholder="Например, цемент"
+            />
+          </div>
+          <div class="field">
+            <label for="category">Категория</label
+            ><select id="category" name="category">
+              <option value="">Все категории</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="max-price">Цена до, ₽</label
+            ><input
+              id="max-price"
+              name="maxPrice"
+              type="number"
+              min="1"
+              step="1"
+              placeholder="Без ограничений"
+            /><small id="price-error" class="error"></small>
+          </div>
+          <div class="field">
+            <label for="sort">Сортировка</label
+            ><select id="sort" name="sort">
+              <option value="default">По умолчанию</option>
+              <option value="asc">Сначала дешевле</option>
+              <option value="desc">Сначала дороже</option>
+              <option value="name">По названию</option>
+            </select>
+          </div>
+          <button type="submit" class="button dark">Показать</button>
+        </form>
+        <div id="catalog" class="product-grid" aria-live="polite">
+          <p>Загружаем каталог…</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-grid">
+        <div>
+          <a class="footer-brand" href="/index.html"
+            >строймаркет<span>®</span></a
+          >
+          <p>Хороший ремонт начинается<br />с правильных материалов.</p>
+        </div>
+        <div>
+          <h2>Ваш проект</h2>
+          <a href="/catalog.html">Каталог материалов</a
+          ><a href="/calculator.html">Рассчитать расход</a
+          ><a href="/cart.html">Моя корзина</a>
+        </div>
+        <div>
+          <h2>Информация</h2>
+          <a href="/contacts.html">Контакты и обратная связь</a
+          ><a href="/account.html">Личный кабинет</a
+          ><a href="/docs">Документация API</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 Строймаркет · Вариант №14</span
+        ><span>Учебный магазин. Продажи и оплата не осуществляются.</span>
+      </div>
+    </footer>
+    <div id="toast" class="toast" role="status"></div>
+  </body>
+</html>
