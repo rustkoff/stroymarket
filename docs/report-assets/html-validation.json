@@ -27,7 +27,23 @@
     "version": "26.11.14",
     "messages": []
   },
+  "drywall-knauf.html": {
+    "version": "26.11.14",
+    "messages": []
+  },
+  "drywall-multicomfort.html": {
+    "version": "26.11.14",
+    "messages": []
+  },
+  "drywall-wind.html": {
+    "version": "26.11.14",
+    "messages": []
+  },
   "drywall.html": {
+    "version": "26.11.14",
+    "messages": []
+  },
+  "glue-bergauf.html": {
     "version": "26.11.14",
     "messages": []
   },
@@ -43,23 +59,7 @@
     "version": "26.11.14",
     "messages": []
   },
-  "paint.html": {
-    "version": "26.11.14",
-    "messages": []
-  },
-  "plaster.html": {
-    "version": "26.11.14",
-    "messages": []
-  },
   "plywood.html": {
-    "version": "26.11.14",
-    "messages": []
-  },
-  "primer.html": {
-    "version": "26.11.14",
-    "messages": []
-  },
-  "putty.html": {
     "version": "26.11.14",
     "messages": []
   }
