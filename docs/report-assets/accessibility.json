@@ -1,0 +1,52 @@
+[
+  {
+    "emptyLinks": 0,
+    "focusStyle": true,
+    "h1": 1,
+    "language": "ru",
+    "main": 1,
+    "missingAlt": 0,
+    "page": "index.html",
+    "unlabelledFields": 0
+  },
+  {
+    "emptyLinks": 0,
+    "focusStyle": true,
+    "h1": 1,
+    "language": "ru",
+    "main": 1,
+    "missingAlt": 0,
+    "page": "catalog.html",
+    "unlabelledFields": 0
+  },
+  {
+    "emptyLinks": 0,
+    "focusStyle": true,
+    "h1": 1,
+    "language": "ru",
+    "main": 1,
+    "missingAlt": 0,
+    "page": "cement.html",
+    "unlabelledFields": 0
+  },
+  {
+    "emptyLinks": 0,
+    "focusStyle": true,
+    "h1": 1,
+    "language": "ru",
+    "main": 1,
+    "missingAlt": 0,
+    "page": "cart.html",
+    "unlabelledFields": 0
+  },
+  {
+    "emptyLinks": 0,
+    "focusStyle": true,
+    "h1": 1,
+    "language": "ru",
+    "main": 1,
+    "missingAlt": 0,
+    "page": "contacts.html",
+    "unlabelledFields": 0
+  }
+]
