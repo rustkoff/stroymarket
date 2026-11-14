@@ -1,22 +1,499 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Учебный магазин стройматериалов СтройЗапас. Каталог, характеристики и цены.">
-  <title>Каталог — СтройЗапас</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<a class="skip-link" href="#main">К содержимому</a>
-<header class="site-header"><div class="container header-row">
-<a class="brand" href="index.html"><img src="images/logo.svg" width="48" height="48" alt="Логотип СтройЗапас: дом из блоков"><span>СтройЗапас<small>Материалы для вашего ремонта</small></span></a>
-<nav aria-label="Основная навигация"><a href="index.html">Главная</a><a href="catalog.html" aria-current="page">Каталог</a><a href="cart.html">Корзина</a><a href="contacts.html">Контакты</a><details class="product-menu"><summary>Товары</summary><ul><li><a href="cement.html">Цемент М500</a></li><li><a href="plaster.html">Штукатурка гипсовая</a></li><li><a href="glue.html">Плиточный клей</a></li><li><a href="putty.html">Шпатлёвка финишная</a></li><li><a href="brick.html">Кирпич керамический</a></li><li><a href="block.html">Газобетонный блок</a></li><li><a href="drywall.html">Гипсокартон</a></li><li><a href="plywood.html">Фанера ФК</a></li><li><a href="board.html">Доска обрезная</a></li><li><a href="insulation.html">Минеральная вата</a></li><li><a href="paint.html">Краска для стен</a></li><li><a href="primer.html">Грунтовка глубокого проникновения</a></li></ul></details></nav>
-</div></header>
-<main id="main" class="container">
-<div class="page-heading"><p class="eyebrow">СтройЗапас / Каталог</p><h1>Каталог стройматериалов</h1><p>12 материалов для строительства и внутренней отделки. Цены указаны за единицу продажи.</p></div>
-<form class="filters" aria-describedby="filters-note"><fieldset disabled><legend>Подбор материалов</legend><div class="filter-fields"><div><label for="search">Название</label><input id="search" name="search" type="search" placeholder="Например, цемент"></div><div><label for="category">Категория</label><select id="category" name="category"><option value="all">Все категории</option><option>Сухие смеси</option><option>Кладочные материалы</option><option>Листовые материалы</option><option>Пиломатериалы</option><option>Изоляция</option><option>Отделка</option></select></div><div><label for="sort">Сортировка</label><select id="sort" name="sort"><option value="default">По умолчанию</option value="price-asc">Сначала дешевле</option><option value="price-desc">Сначала дороже</option></select></div><button type="submit">Применить</button></div></fieldset><p id="filters-note" class="hint">Пока показаны все товары. Поиск, фильтрация и сортировка будут подключены в практической работе № 2.</p></form>
-<section class="section"><h2>Все материалы</h2><div class="product-grid"><article class="product-card"><a class="product-image" href="cement.html"><img src="images/cement.svg" alt="Цемент М500: условная иллюстрация товара" width="360" height="250" loading="lazy"></a><div class="card-body"><p class="category">Сухие смеси</p><h3><a href="cement.html">Цемент М500</a></h3><p class="unit">мешок 50 кг</p><p class="price">490 ₽</p><a class="text-link" href="cement.html">Подробнее →</a></div></article><article class="product-card"><a class="product-image" href="plaster.html"><img src="images/plaster.svg" alt="Штукатурка гипсовая: условная иллюстрация товара" width="360" height="250" loading="lazy"></a><div class="card-body"><p class="category">Сухие смеси</p><h3><a href="plaster.html">Штукатурка гипсовая</a></h3><p class="unit">мешок 30 кг</p><p class="price">430 ₽</p><a class="text-link" href="plaster.html">Подробнее →</a></div></article><article class="product-card"><a class="product-image" href="glue.html"><img src="images/glue.svg" alt="Плиточный клей: условная иллюстрация товара" width="360" height="250" loading="lazy"></a><div class="card-body"><p class="category">Сухие смеси</p><h3><a href="glue.html">Плиточный клей</a></h3><p class="unit">мешок 25 кг</p><p class="price">360 ₽</p><a class="text-link" href="glue.html">Подробнее →</a></div></article><article class="product-card"><a class="product-image" href="putty.html"><img src="images/putty.svg" alt="Шпатлёвка финишная: условная иллюстрация товара" width="360" height="250" loading="lazy"></a><div class="card-body"><p class="category">Сухие смеси</p><h3><a href="putty.html">Шпатлёвка финишная</a></h3><p class="unit">мешок 20 кг</p><p class="price">520 ₽</p><a class="text-link" href="putty.html">Подробнее →</a></div></article><article class="product-card"><a class="product-image" href="brick.html"><img src="images/brick.svg" alt="Кирпич керамический: условная иллюстрация товара" width="360" height="250" loading="lazy"></a><div class="card-body"><p class="category">Кладочные материалы</p><h3><a href="brick.html">Кирпич керамический</a></h3><p class="unit">штука</p><p class="price">28 ₽</p><a class="text-link" href="brick.html">Подробнее →</a></div></article><article class="product-card"><a class="product-image" href="block.html"><img src="images/block.svg" alt="Газобетонный блок: условная иллюстрация товара" width="360" height="250" loading="lazy"></a><div class="card-body"><p class="category">Кладочные материалы</p><h3><a href="block.html">Газобетонный блок</a></h3><p class="unit">штука</p><p class="price">245 ₽</p><a class="text-link" href="block.html">Подробнее →</a></div></article><article class="product-card"><a class="product-image" href="drywall.html"><img src="images/drywall.svg" alt="Гипсокартон: условная иллюстрация товара" width="360" height="250" loading="lazy"></a><div class="card-body"><p class="category">Листовые материалы</p><h3><a href="drywall.html">Гипсокартон</a></h3><p class="unit">лист</p><p class="price">410 ₽</p><a class="text-link" href="drywall.html">Подробнее →</a></div></article><article class="product-card"><a class="product-image" href="plywood.html"><img src="images/plywood.svg" alt="Фанера ФК: условная иллюстрация товара" width="360" height="250" loading="lazy"></a><div class="card-body"><p class="category">Листовые материалы</p><h3><a href="plywood.html">Фанера ФК</a></h3><p class="unit">лист</p><p class="price">1 250 ₽</p><a class="text-link" href="plywood.html">Подробнее →</a></div></article><article class="product-card"><a class="product-image" href="board.html"><img src="images/board.svg" alt="Доска обрезная: условная иллюстрация товара" width="360" height="250" loading="lazy"></a><div class="card-body"><p class="category">Пиломатериалы</p><h3><a href="board.html">Доска обрезная</a></h3><p class="unit">штука</p><p class="price">390 ₽</p><a class="text-link" href="board.html">Подробнее →</a></div></article><article class="product-card"><a class="product-image" href="insulation.html"><img src="images/insulation.svg" alt="Минеральная вата: условная иллюстрация товара" width="360" height="250" loading="lazy"></a><div class="card-body"><p class="category">Изоляция</p><h3><a href="insulation.html">Минеральная вата</a></h3><p class="unit">упаковка</p><p class="price">890 ₽</p><a class="text-link" href="insulation.html">Подробнее →</a></div></article><article class="product-card"><a class="product-image" href="paint.html"><img src="images/paint.svg" alt="Краска для стен: условная иллюстрация товара" width="360" height="250" loading="lazy"></a><div class="card-body"><p class="category">Отделка</p><h3><a href="paint.html">Краска для стен</a></h3><p class="unit">ведро 10 л</p><p class="price">1 490 ₽</p><a class="text-link" href="paint.html">Подробнее →</a></div></article><article class="product-card"><a class="product-image" href="primer.html"><img src="images/primer.svg" alt="Грунтовка глубокого проникновения: условная иллюстрация товара" width="360" height="250" loading="lazy"></a><div class="card-body"><p class="category">Отделка</p><h3><a href="primer.html">Грунтовка глубокого проникновения</a></h3><p class="unit">канистра 10 л</p><p class="price">650 ₽</p><a class="text-link" href="primer.html">Подробнее →</a></div></article></div></section></main>
-<footer class="site-footer"><div class="container footer-row"><p><strong>СтройЗапас</strong><br>С хорошего материала начинается хороший ремонт.</p><p>Учебный проект · Шустов Ф. А. · ЗН251<br>Товары, цены и контакты приведены для примера.</p></div></footer>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Учебный магазин стройматериалов СтройЗапас. Каталог, характеристики и цены.">
+    <title>
+      Каталог — СтройЗапас
+    </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">
+      К содержимому
+    </a>
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="index.html">
+          <img src="images/logo.svg" width="48" height="48" alt="Логотип СтройЗапас: дом из блоков">
+          <span>
+            СтройЗапас
+            <small>
+              Материалы для вашего ремонта
+            </small>
+          </span>
+        </a>
+        <nav aria-label="Основная навигация">
+          <a href="index.html">
+            Главная
+          </a>
+          <a href="catalog.html" aria-current="page">
+            Каталог
+          </a>
+          <a href="cart.html">
+            Корзина
+          </a>
+          <a href="contacts.html">
+            Контакты
+          </a>
+          <details class="product-menu">
+            <summary>
+              Товары
+            </summary>
+            <ul>
+              <li>
+                <a href="cement.html">
+                  Цемент М500
+                </a>
+              </li>
+              <li>
+                <a href="plaster.html">
+                  Штукатурка гипсовая
+                </a>
+              </li>
+              <li>
+                <a href="glue.html">
+                  Плиточный клей
+                </a>
+              </li>
+              <li>
+                <a href="putty.html">
+                  Шпатлёвка финишная
+                </a>
+              </li>
+              <li>
+                <a href="brick.html">
+                  Кирпич керамический
+                </a>
+              </li>
+              <li>
+                <a href="block.html">
+                  Газобетонный блок
+                </a>
+              </li>
+              <li>
+                <a href="drywall.html">
+                  Гипсокартон
+                </a>
+              </li>
+              <li>
+                <a href="plywood.html">
+                  Фанера ФК
+                </a>
+              </li>
+              <li>
+                <a href="board.html">
+                  Доска обрезная
+                </a>
+              </li>
+              <li>
+                <a href="insulation.html">
+                  Минеральная вата
+                </a>
+              </li>
+              <li>
+                <a href="paint.html">
+                  Краска для стен
+                </a>
+              </li>
+              <li>
+                <a href="primer.html">
+                  Грунтовка глубокого проникновения
+                </a>
+              </li>
+            </ul>
+          </details>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="container">
+      <div class="page-heading">
+        <p class="eyebrow">
+          СтройЗапас / Каталог
+        </p>
+        <h1>
+          Каталог стройматериалов
+        </h1>
+        <p>
+          12 материалов для строительства и внутренней отделки. Цены указаны за единицу продажи.
+        </p>
+      </div>
+      <form class="filters" aria-describedby="filters-note">
+        <fieldset disabled>
+          <legend>
+            Подбор материалов
+          </legend>
+          <div class="filter-fields">
+            <div>
+              <label for="search">
+                Название
+              </label>
+              <input id="search" name="search" type="search" placeholder="Например, цемент">
+            </div>
+            <div>
+              <label for="category">
+                Категория
+              </label>
+              <select id="category" name="category">
+                <option value="all">
+                  Все категории
+                </option>
+                <option>
+                  Сухие смеси
+                </option>
+                <option>
+                  Кладочные материалы
+                </option>
+                <option>
+                  Листовые материалы
+                </option>
+                <option>
+                  Пиломатериалы
+                </option>
+                <option>
+                  Изоляция
+                </option>
+                <option>
+                  Отделка
+                </option>
+              </select>
+            </div>
+            <div>
+              <label for="sort">
+                Сортировка
+              </label>
+              <select id="sort" name="sort">
+                <option value="default">
+                  По умолчанию
+                </option value="price-asc">
+                Сначала дешевле
+              </option>
+              <option value="price-desc">
+                Сначала дороже
+              </option>
+            </select>
+          </div>
+          <button type="submit">
+            Применить
+          </button>
+        </div>
+      </fieldset>
+      <p id="filters-note" class="hint">
+        Пока показаны все товары. Поиск, фильтрация и сортировка будут подключены в практической работе № 2.
+      </p>
+    </form>
+    <section class="section">
+      <h2>
+        Все материалы
+      </h2>
+      <div class="product-grid">
+        <article class="product-card">
+          <a class="product-image" href="cement.html">
+            <img src="images/cement.svg" alt="Цемент М500: условная иллюстрация товара" width="360" height="250" loading="lazy">
+          </a>
+          <div class="card-body">
+            <p class="category">
+              Сухие смеси
+            </p>
+            <h3>
+              <a href="cement.html">
+                Цемент М500
+              </a>
+            </h3>
+            <p class="unit">
+              мешок 50 кг
+            </p>
+            <p class="price">
+              490 ₽
+            </p>
+            <a class="text-link" href="cement.html">
+              Подробнее →
+            </a>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="product-image" href="plaster.html">
+            <img src="images/plaster.svg" alt="Штукатурка гипсовая: условная иллюстрация товара" width="360" height="250" loading="lazy">
+          </a>
+          <div class="card-body">
+            <p class="category">
+              Сухие смеси
+            </p>
+            <h3>
+              <a href="plaster.html">
+                Штукатурка гипсовая
+              </a>
+            </h3>
+            <p class="unit">
+              мешок 30 кг
+            </p>
+            <p class="price">
+              430 ₽
+            </p>
+            <a class="text-link" href="plaster.html">
+              Подробнее →
+            </a>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="product-image" href="glue.html">
+            <img src="images/glue.svg" alt="Плиточный клей: условная иллюстрация товара" width="360" height="250" loading="lazy">
+          </a>
+          <div class="card-body">
+            <p class="category">
+              Сухие смеси
+            </p>
+            <h3>
+              <a href="glue.html">
+                Плиточный клей
+              </a>
+            </h3>
+            <p class="unit">
+              мешок 25 кг
+            </p>
+            <p class="price">
+              360 ₽
+            </p>
+            <a class="text-link" href="glue.html">
+              Подробнее →
+            </a>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="product-image" href="putty.html">
+            <img src="images/putty.svg" alt="Шпатлёвка финишная: условная иллюстрация товара" width="360" height="250" loading="lazy">
+          </a>
+          <div class="card-body">
+            <p class="category">
+              Сухие смеси
+            </p>
+            <h3>
+              <a href="putty.html">
+                Шпатлёвка финишная
+              </a>
+            </h3>
+            <p class="unit">
+              мешок 20 кг
+            </p>
+            <p class="price">
+              520 ₽
+            </p>
+            <a class="text-link" href="putty.html">
+              Подробнее →
+            </a>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="product-image" href="brick.html">
+            <img src="images/brick.svg" alt="Кирпич керамический: условная иллюстрация товара" width="360" height="250" loading="lazy">
+          </a>
+          <div class="card-body">
+            <p class="category">
+              Кладочные материалы
+            </p>
+            <h3>
+              <a href="brick.html">
+                Кирпич керамический
+              </a>
+            </h3>
+            <p class="unit">
+              штука
+            </p>
+            <p class="price">
+              28 ₽
+            </p>
+            <a class="text-link" href="brick.html">
+              Подробнее →
+            </a>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="product-image" href="block.html">
+            <img src="images/block.svg" alt="Газобетонный блок: условная иллюстрация товара" width="360" height="250" loading="lazy">
+          </a>
+          <div class="card-body">
+            <p class="category">
+              Кладочные материалы
+            </p>
+            <h3>
+              <a href="block.html">
+                Газобетонный блок
+              </a>
+            </h3>
+            <p class="unit">
+              штука
+            </p>
+            <p class="price">
+              245 ₽
+            </p>
+            <a class="text-link" href="block.html">
+              Подробнее →
+            </a>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="product-image" href="drywall.html">
+            <img src="images/drywall.svg" alt="Гипсокартон: условная иллюстрация товара" width="360" height="250" loading="lazy">
+          </a>
+          <div class="card-body">
+            <p class="category">
+              Листовые материалы
+            </p>
+            <h3>
+              <a href="drywall.html">
+                Гипсокартон
+              </a>
+            </h3>
+            <p class="unit">
+              лист
+            </p>
+            <p class="price">
+              410 ₽
+            </p>
+            <a class="text-link" href="drywall.html">
+              Подробнее →
+            </a>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="product-image" href="plywood.html">
+            <img src="images/plywood.svg" alt="Фанера ФК: условная иллюстрация товара" width="360" height="250" loading="lazy">
+          </a>
+          <div class="card-body">
+            <p class="category">
+              Листовые материалы
+            </p>
+            <h3>
+              <a href="plywood.html">
+                Фанера ФК
+              </a>
+            </h3>
+            <p class="unit">
+              лист
+            </p>
+            <p class="price">
+              1 250 ₽
+            </p>
+            <a class="text-link" href="plywood.html">
+              Подробнее →
+            </a>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="product-image" href="board.html">
+            <img src="images/board.svg" alt="Доска обрезная: условная иллюстрация товара" width="360" height="250" loading="lazy">
+          </a>
+          <div class="card-body">
+            <p class="category">
+              Пиломатериалы
+            </p>
+            <h3>
+              <a href="board.html">
+                Доска обрезная
+              </a>
+            </h3>
+            <p class="unit">
+              штука
+            </p>
+            <p class="price">
+              390 ₽
+            </p>
+            <a class="text-link" href="board.html">
+              Подробнее →
+            </a>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="product-image" href="insulation.html">
+            <img src="images/insulation.svg" alt="Минеральная вата: условная иллюстрация товара" width="360" height="250" loading="lazy">
+          </a>
+          <div class="card-body">
+            <p class="category">
+              Изоляция
+            </p>
+            <h3>
+              <a href="insulation.html">
+                Минеральная вата
+              </a>
+            </h3>
+            <p class="unit">
+              упаковка
+            </p>
+            <p class="price">
+              890 ₽
+            </p>
+            <a class="text-link" href="insulation.html">
+              Подробнее →
+            </a>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="product-image" href="paint.html">
+            <img src="images/paint.svg" alt="Краска для стен: условная иллюстрация товара" width="360" height="250" loading="lazy">
+          </a>
+          <div class="card-body">
+            <p class="category">
+              Отделка
+            </p>
+            <h3>
+              <a href="paint.html">
+                Краска для стен
+              </a>
+            </h3>
+            <p class="unit">
+              ведро 10 л
+            </p>
+            <p class="price">
+              1 490 ₽
+            </p>
+            <a class="text-link" href="paint.html">
+              Подробнее →
+            </a>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="product-image" href="primer.html">
+            <img src="images/primer.svg" alt="Грунтовка глубокого проникновения: условная иллюстрация товара" width="360" height="250" loading="lazy">
+          </a>
+          <div class="card-body">
+            <p class="category">
+              Отделка
+            </p>
+            <h3>
+              <a href="primer.html">
+                Грунтовка глубокого проникновения
+              </a>
+            </h3>
+            <p class="unit">
+              канистра 10 л
+            </p>
+            <p class="price">
+              650 ₽
+            </p>
+            <a class="text-link" href="primer.html">
+              Подробнее →
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>
+        <strong>
+          СтройЗапас
+        </strong>
+        <br>
+        С хорошего материала начинается хороший ремонт.
+      </p>
+      <p>
+        Учебный проект · Шустов Ф. А. · ЗН251
+        <br>
+        Товары, цены и контакты приведены для примера.
+      </p>
+    </div>
+  </footer>
 </body>
 </html>

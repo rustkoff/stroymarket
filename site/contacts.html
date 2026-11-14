@@ -1,22 +1,223 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Учебный магазин стройматериалов СтройЗапас. Каталог, характеристики и цены.">
-  <title>Контакты — СтройЗапас</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<a class="skip-link" href="#main">К содержимому</a>
-<header class="site-header"><div class="container header-row">
-<a class="brand" href="index.html"><img src="images/logo.svg" width="48" height="48" alt="Логотип СтройЗапас: дом из блоков"><span>СтройЗапас<small>Материалы для вашего ремонта</small></span></a>
-<nav aria-label="Основная навигация"><a href="index.html">Главная</a><a href="catalog.html">Каталог</a><a href="cart.html">Корзина</a><a href="contacts.html" aria-current="page">Контакты</a><details class="product-menu"><summary>Товары</summary><ul><li><a href="cement.html">Цемент М500</a></li><li><a href="plaster.html">Штукатурка гипсовая</a></li><li><a href="glue.html">Плиточный клей</a></li><li><a href="putty.html">Шпатлёвка финишная</a></li><li><a href="brick.html">Кирпич керамический</a></li><li><a href="block.html">Газобетонный блок</a></li><li><a href="drywall.html">Гипсокартон</a></li><li><a href="plywood.html">Фанера ФК</a></li><li><a href="board.html">Доска обрезная</a></li><li><a href="insulation.html">Минеральная вата</a></li><li><a href="paint.html">Краска для стен</a></li><li><a href="primer.html">Грунтовка глубокого проникновения</a></li></ul></details></nav>
-</div></header>
-<main id="main" class="container">
-<div class="page-heading"><p class="eyebrow">СтройЗапас / Контакты</p><h1>Контакты</h1><p>С хорошего материала начинается хороший ремонт.</p></div>
-<div class="contacts-layout"><section class="contact-info"><h2>Магазин и самовывоз</h2><address><p>г. Москва, ул. Строителей, д. 14</p><p>Телефон: <a href="tel:+74950000000">+7 (495) 000-00-00</a></p><p>Почта: <a href="mailto:info@stroyzapas.example">info@stroyzapas.example</a></p></address><h3>Режим работы</h3><p>Понедельник — пятница: 09:00–19:00<br>Суббота: 10:00–17:00<br>Воскресенье: выходной</p><p class="hint">Адрес, телефон и почта вымышлены и используются в учебном проекте.</p><h3>Перед самовывозом</h3><p>Уточните наличие и подготовьте подходящий транспорт. Некоторые материалы продаются в тяжёлых мешках или большими листами.</p></section>
-<section><h2>Обратная связь</h2><p id="feedback-note" class="hint">Макет формы: сообщения пока не отправляются. Проверка и обработка появятся в ПР 2.</p><form class="feedback-form" aria-describedby="feedback-note"><label for="name">Ваше имя</label><input id="name" name="name" autocomplete="name" maxlength="80" required><label for="email">Электронная почта</label><input id="email" name="email" type="email" autocomplete="email" required><label for="topic">Тема обращения</label><select id="topic" name="topic"><option value="product">Вопрос о товаре</option><option value="delivery">Доставка и самовывоз</option><option value="other">Другой вопрос</option></select><label for="message">Сообщение</label><textarea id="message" name="message" rows="5" minlength="10" maxlength="2000" required></textarea><button type="submit" disabled>Отправить сообщение</button></form></section></div></main>
-<footer class="site-footer"><div class="container footer-row"><p><strong>СтройЗапас</strong><br>С хорошего материала начинается хороший ремонт.</p><p>Учебный проект · Шустов Ф. А. · ЗН251<br>Товары, цены и контакты приведены для примера.</p></div></footer>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Учебный магазин стройматериалов СтройЗапас. Каталог, характеристики и цены.">
+    <title>
+      Контакты — СтройЗапас
+    </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">
+      К содержимому
+    </a>
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="index.html">
+          <img src="images/logo.svg" width="48" height="48" alt="Логотип СтройЗапас: дом из блоков">
+          <span>
+            СтройЗапас
+            <small>
+              Материалы для вашего ремонта
+            </small>
+          </span>
+        </a>
+        <nav aria-label="Основная навигация">
+          <a href="index.html">
+            Главная
+          </a>
+          <a href="catalog.html">
+            Каталог
+          </a>
+          <a href="cart.html">
+            Корзина
+          </a>
+          <a href="contacts.html" aria-current="page">
+            Контакты
+          </a>
+          <details class="product-menu">
+            <summary>
+              Товары
+            </summary>
+            <ul>
+              <li>
+                <a href="cement.html">
+                  Цемент М500
+                </a>
+              </li>
+              <li>
+                <a href="plaster.html">
+                  Штукатурка гипсовая
+                </a>
+              </li>
+              <li>
+                <a href="glue.html">
+                  Плиточный клей
+                </a>
+              </li>
+              <li>
+                <a href="putty.html">
+                  Шпатлёвка финишная
+                </a>
+              </li>
+              <li>
+                <a href="brick.html">
+                  Кирпич керамический
+                </a>
+              </li>
+              <li>
+                <a href="block.html">
+                  Газобетонный блок
+                </a>
+              </li>
+              <li>
+                <a href="drywall.html">
+                  Гипсокартон
+                </a>
+              </li>
+              <li>
+                <a href="plywood.html">
+                  Фанера ФК
+                </a>
+              </li>
+              <li>
+                <a href="board.html">
+                  Доска обрезная
+                </a>
+              </li>
+              <li>
+                <a href="insulation.html">
+                  Минеральная вата
+                </a>
+              </li>
+              <li>
+                <a href="paint.html">
+                  Краска для стен
+                </a>
+              </li>
+              <li>
+                <a href="primer.html">
+                  Грунтовка глубокого проникновения
+                </a>
+              </li>
+            </ul>
+          </details>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="container">
+      <div class="page-heading">
+        <p class="eyebrow">
+          СтройЗапас / Контакты
+        </p>
+        <h1>
+          Контакты
+        </h1>
+        <p>
+          С хорошего материала начинается хороший ремонт.
+        </p>
+      </div>
+      <div class="contacts-layout">
+        <section class="contact-info">
+          <h2>
+            Магазин и самовывоз
+          </h2>
+          <address>
+            <p>
+              г. Москва, ул. Строителей, д. 14
+            </p>
+            <p>
+              Телефон:
+              <a href="tel:+74950000000">
+                +7 (495) 000-00-00
+              </a>
+            </p>
+            <p>
+              Почта:
+              <a href="mailto:info@stroyzapas.example">
+                info@stroyzapas.example
+              </a>
+            </p>
+          </address>
+          <h3>
+            Режим работы
+          </h3>
+          <p>
+            Понедельник — пятница: 09:00–19:00
+            <br>
+            Суббота: 10:00–17:00
+            <br>
+            Воскресенье: выходной
+          </p>
+          <p class="hint">
+            Адрес, телефон и почта вымышлены и используются в учебном проекте.
+          </p>
+          <h3>
+            Перед самовывозом
+          </h3>
+          <p>
+            Уточните наличие и подготовьте подходящий транспорт. Некоторые материалы продаются в тяжёлых мешках или большими листами.
+          </p>
+        </section>
+        <section>
+          <h2>
+            Обратная связь
+          </h2>
+          <p id="feedback-note" class="hint">
+            Макет формы: сообщения пока не отправляются. Проверка и обработка появятся в ПР 2.
+          </p>
+          <form class="feedback-form" aria-describedby="feedback-note">
+            <label for="name">
+              Ваше имя
+            </label>
+            <input id="name" name="name" autocomplete="name" maxlength="80" required>
+            <label for="email">
+              Электронная почта
+            </label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+            <label for="topic">
+              Тема обращения
+            </label>
+            <select id="topic" name="topic">
+              <option value="product">
+                Вопрос о товаре
+              </option>
+              <option value="delivery">
+                Доставка и самовывоз
+              </option>
+              <option value="other">
+                Другой вопрос
+              </option>
+            </select>
+            <label for="message">
+              Сообщение
+            </label>
+            <textarea id="message" name="message" rows="5" minlength="10" maxlength="2000" required>
+            </textarea>
+            <button type="submit" disabled>
+              Отправить сообщение
+            </button>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>
+          <strong>
+            СтройЗапас
+          </strong>
+          <br>
+          С хорошего материала начинается хороший ремонт.
+        </p>
+        <p>
+          Учебный проект · Шустов Ф. А. · ЗН251
+          <br>
+          Товары, цены и контакты приведены для примера.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
