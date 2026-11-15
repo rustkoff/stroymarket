@@ -54,7 +54,7 @@ docker run -d --name stroymarket-local \
 
 ## Docker на этом VDS
 
-Установлены Debian-пакеты Docker/Compose. Docker запущен без моста, управления iptables, IP forwarding и masquerading: `/etc/docker/daemon.json`. Пример этой настройки — `deploy/docker-daemon.example.json`. Это настройка специально для данного сервера, где уже работают VPN и firewall. Общие правила firewall и сетевые sysctl не изменены.
+Установлены Debian-пакеты Docker/Compose. Docker запущен без моста, управления iptables, IP forwarding и masquerading: `/etc/docker/daemon.json`. Пример этой настройки — `deploy/docker-daemon.example.json`. Это настройка специально для моего сервера, где уже работают коммерческий VPN и firewall.
 
 ```bash
 cd /root/stroymarket
