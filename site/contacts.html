@@ -8,6 +8,7 @@
       Контакты — СтройЗапас
     </title>
     <link rel="stylesheet" href="style.css">
+    <script src="js/feedback.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">
@@ -166,17 +167,19 @@
             Обратная связь
           </h2>
           <p id="feedback-note" class="hint">
-            Макет формы: сообщения пока не отправляются. Проверка и обработка появятся в ПР 2.
+            Учебная проверка формы. Сообщение никуда не отправляется и не сохраняется. Имя: 2–80 символов, сообщение: 10–2000 символов без пробелов по краям.
           </p>
-          <form class="feedback-form" aria-describedby="feedback-note">
+          <form id="feedback-form" novalidate class="feedback-form" aria-describedby="feedback-note">
             <label for="name">
               Ваше имя
             </label>
-            <input id="name" name="name" autocomplete="name" maxlength="80" required>
+            <input id="name" aria-describedby="name-error" name="name" autocomplete="name" maxlength="80" required>
+            <p id="name-error" class="field-error"></p>
             <label for="email">
               Электронная почта
             </label>
-            <input id="email" name="email" type="email" autocomplete="email" required>
+            <input id="email" aria-describedby="email-error" name="email" type="email" maxlength="254" autocomplete="email" required>
+            <p id="email-error" class="field-error"></p>
             <label for="topic">
               Тема обращения
             </label>
@@ -194,12 +197,14 @@
             <label for="message">
               Сообщение
             </label>
-            <textarea id="message" name="message" rows="5" minlength="10" maxlength="2000" required>
-            </textarea>
+            <textarea id="message" aria-describedby="message-error" name="message" rows="5" minlength="10" maxlength="2000" required></textarea>
+            <p id="message-error" class="field-error"></p>
             <button type="submit" disabled>
-              Отправить сообщение
+              Проверить сообщение
             </button>
+            <p id="feedback-result" class="form-result" role="status"></p>
           </form>
+          <noscript><p>Для проверки формы включите JavaScript.</p></noscript>
         </section>
       </div>
     </main>

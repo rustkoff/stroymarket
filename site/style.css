@@ -7,6 +7,14 @@
   --paper: #faf9f5;
 }
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
+button { cursor: pointer; }
+.field-error { color: #942c20; font-size: 14px; margin: 4px 0 12px; }
+.field-error:empty, .form-result:empty { display: none; }
+[aria-invalid="true"] { border: 2px solid #942c20; }
+.form-result { margin-top: 18px; padding: 14px; border-left: 4px solid var(--green); background: white; overflow-wrap: anywhere; }
+.calculator-form { max-width: 650px; }
+.calculator-form select, .calculator-form input { margin-bottom: 8px; }
 body { margin: 0; background: var(--paper); color: var(--text); font-family: Arial, sans-serif; font-size: 16px; line-height: 1.6; }
 a { color: var(--green); text-underline-offset: 3px; }
 a:hover { color: #884317; }

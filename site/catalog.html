@@ -8,6 +8,8 @@
       Каталог — СтройЗапас
     </title>
     <link rel="stylesheet" href="style.css">
+    <script src="js/catalog.js" defer></script>
+    <script src="js/calculator.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">
@@ -119,7 +121,7 @@
           12 материалов для строительства и внутренней отделки. Цены указаны за единицу продажи.
         </p>
       </div>
-      <form class="filters" aria-describedby="filters-note">
+      <form id="catalog-filters" class="filters" aria-describedby="filters-note">
         <fieldset disabled>
           <legend>
             Подбор материалов
@@ -172,21 +174,23 @@
                 </option>
               </select>
             </div>
-            <button type="submit">
-              Применить
-            </button>
+            <button type="reset">Сбросить</button>
           </div>
         </fieldset>
         <p id="filters-note" class="hint">
-          Пока показаны все товары. Поиск, фильтрация и сортировка будут подключены в практической работе № 2.
+          Поиск и категория применяются вместе. Сортировка сравнивает цены за единицу продажи, а не за одинаковую площадь или массу.
         </p>
       </form>
+      <p><a href="#calculator">Рассчитать количество материала ↓</a></p>
+      <noscript><p>Для поиска, расчёта и внешних данных включите JavaScript. Все товары доступны ниже.</p></noscript>
       <section class="section">
         <h2>
           Все материалы
         </h2>
+        <p id="catalog-status" role="status">Показано товаров: 12 из 12.</p>
+        <p id="catalog-empty" hidden>Ничего не найдено. Измените название или категорию, либо нажмите «Сбросить».</p>
         <div class="product-grid">
-          <article class="product-card">
+          <article class="product-card" data-price="490">
             <a class="product-image" href="cement.html">
               <img src="images/cement.webp" alt="Цемент ЦЕМРОС М500 Д0" width="925" height="925" loading="lazy">
             </a>
@@ -210,7 +214,7 @@
               </a>
             </div>
           </article>
-          <article class="product-card">
+          <article class="product-card" data-price="690">
             <a class="product-image" href="glue.html">
               <img src="images/glue_1.webp" alt="Клей Unis U-100 PolymerGEL" width="925" height="925" loading="lazy">
             </a>
@@ -234,7 +238,7 @@
               </a>
             </div>
           </article>
-          <article class="product-card">
+          <article class="product-card" data-price="610">
             <a class="product-image" href="glue-bergauf.html">
               <img src="images/glue_2.webp" alt="Клей Bergauf Keramik Pro" width="925" height="925" loading="lazy">
             </a>
@@ -258,7 +262,7 @@
               </a>
             </div>
           </article>
-          <article class="product-card">
+          <article class="product-card" data-price="28">
             <a class="product-image" href="brick.html">
               <img src="images/brick.webp" alt="Кирпич ЛСР М150 полнотелый" width="925" height="925" loading="lazy">
             </a>
@@ -282,7 +286,7 @@
               </a>
             </div>
           </article>
-          <article class="product-card">
+          <article class="product-card" data-price="175">
             <a class="product-image" href="block.html">
               <img src="images/block.webp" alt="Газобетон ЛСР D400, 150 мм" width="925" height="925" loading="lazy">
             </a>
@@ -306,7 +310,7 @@
               </a>
             </div>
           </article>
-          <article class="product-card">
+          <article class="product-card" data-price="410">
             <a class="product-image" href="drywall.html">
               <img src="images/drywall_1.webp" alt="Гипсокартон Vetonit Стронг" width="925" height="925" loading="lazy">
             </a>
@@ -330,7 +334,7 @@
               </a>
             </div>
           </article>
-          <article class="product-card">
+          <article class="product-card" data-price="250">
             <a class="product-image" href="drywall-knauf.html">
               <img src="images/drywall_2.webp" alt="Гипсокартон Knauf влагостойкий" width="925" height="925" loading="lazy">
             </a>
@@ -354,7 +358,7 @@
               </a>
             </div>
           </article>
-          <article class="product-card">
+          <article class="product-card" data-price="850">
             <a class="product-image" href="drywall-multicomfort.html">
               <img src="images/drywall_3.webp" alt="Гипсокартон Vetonit Мультикомфорт" width="925" height="925" loading="lazy">
             </a>
@@ -378,7 +382,7 @@
               </a>
             </div>
           </article>
-          <article class="product-card">
+          <article class="product-card" data-price="1020">
             <a class="product-image" href="drywall-wind.html">
               <img src="images/drywall_4.webp" alt="Гипсокартон Vetonit ветрозащитный" width="925" height="925" loading="lazy">
             </a>
@@ -402,7 +406,7 @@
               </a>
             </div>
           </article>
-          <article class="product-card">
+          <article class="product-card" data-price="2100">
             <a class="product-image" href="plywood.html">
               <img src="images/plywood.jpg" alt="Фанера ФК 12 мм, сорт 2/4" width="925" height="925" loading="lazy">
             </a>
@@ -426,7 +430,7 @@
               </a>
             </div>
           </article>
-          <article class="product-card">
+          <article class="product-card" data-price="1470">
             <a class="product-image" href="board.html">
               <img src="images/board.webp" alt="Доска антисептированная 50 × 150 × 6000 мм" width="925" height="925" loading="lazy">
             </a>
@@ -450,7 +454,7 @@
               </a>
             </div>
           </article>
-          <article class="product-card">
+          <article class="product-card" data-price="2390">
             <a class="product-image" href="insulation.html">
               <img src="images/insulation.webp" alt="ТеплоKnauf для Перекрытий, 100 мм" width="925" height="925" loading="lazy">
             </a>
@@ -475,6 +479,28 @@
             </div>
           </article>
         </div>
+      </section>
+
+      <section id="calculator" class="section info-strip" aria-labelledby="calculator-title">
+        <h2 id="calculator-title">Калькулятор материалов</h2>
+        <p>Выберите товар: единица расчёта зависит от его размеров. Листы считаются в один слой, утеплитель — при толщине 100 мм. Запас задаётся отдельно.</p>
+        <form id="calculator-form" class="calculator-form" novalidate>
+          <label for="material">Материал</label>
+          <select id="material" name="material" aria-describedby="material-note material-error"></select>
+          <p id="material-note" class="hint"></p>
+          <p id="material-error" class="field-error"></p>
+          <label id="amount-label" for="amount">Площадь, м²</label>
+          <input id="amount" name="amount" type="text" inputmode="decimal" maxlength="20" required aria-describedby="amount-note amount-error">
+          <p id="amount-note" class="hint">Больше 0 и не более 10 000. До 6 знаков после точки или запятой.</p>
+          <p id="amount-error" class="field-error"></p>
+          <label for="reserve">Запас, %</label>
+          <input id="reserve" name="reserve" type="text" inputmode="decimal" maxlength="10" value="10" required aria-describedby="reserve-note reserve-error">
+          <p id="reserve-note" class="hint">От 0 до 50 %. До 2 знаков после точки или запятой.</p>
+          <p id="reserve-error" class="field-error"></p>
+          <button type="submit" disabled>Рассчитать</button>
+          <p id="calculator-result" class="form-result" role="status"></p>
+        </form>
+        <p class="hint">Оценка по геометрическим размерам, без схемы раскроя и растворных швов. Для кладки вводится объём самих изделий. Расход цемента и клея зависит от рецептуры и слоя, поэтому эти смеси в расчёт не включены. Данные не сохраняются.</p>
       </section>
     </main>
     <footer class="site-footer">
