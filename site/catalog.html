@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="js/catalog.js" defer></script>
     <script src="js/calculator.js" defer></script>
+    <script src="js/currency.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">
@@ -481,6 +482,23 @@
         </div>
       </section>
 
+      <section class="section info-strip" aria-labelledby="currency-title">
+        <h2 id="currency-title">Цена в другой валюте</h2>
+        <p>Справочный пересчёт учебной цены за одну единицу продажи. Цены каталога остаются в рублях; комиссии и курс оплаты не учитываются.</p>
+        <div class="calculator-form">
+          <label for="currency-product">Товар</label>
+          <select id="currency-product" disabled></select>
+          <label for="currency-code">Валюта</label>
+          <select id="currency-code" disabled>
+            <option value="USD">Доллар США (USD)</option>
+            <option value="EUR">Евро (EUR)</option>
+          </select>
+          <button id="currency-reload" type="button" disabled>Загрузить курсы</button>
+          <p id="currency-status" class="form-result" role="status">Для загрузки курсов нужен JavaScript и доступ в интернет.</p>
+          <p id="currency-result" role="status"></p>
+        </div>
+        <p class="hint">Источник: <a href="https://www.cbr-xml-daily.ru/">API для курсов ЦБ РФ</a> — сторонний сервис из методички. Дата курса отображается из ответа API и может отличаться от сегодняшней.</p>
+      </section>
       <section id="calculator" class="section info-strip" aria-labelledby="calculator-title">
         <h2 id="calculator-title">Калькулятор материалов</h2>
         <p>Выберите товар: единица расчёта зависит от его размеров. Листы считаются в один слой, утеплитель — при толщине 100 мм. Запас задаётся отдельно.</p>
