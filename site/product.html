@@ -1,0 +1,8 @@
+{% extends "base.html" %}{% block content %}
+<p class="breadcrumbs"><a href="index.html">Главная</a> / <a href="catalog.html">Каталог</a> / {{ product.short_name }}</p>
+<article class="product-detail">
+<div><img class="detail-image" src="{{ product.image }}" width="925" height="925" alt="{{ product.short_name }}">{% if product.image_note %}<p class="hint">{{ product.image_note }}</p>{% endif %}</div>
+<div><p class="eyebrow">{{ product.category }}</p><h1>{{ product.name }}</h1><p>{{ product.description }}</p><p class="detail-price">{{ product.price }} ₽ <span>/ {{ product.unit }}</span></p>
+{% if user %}<form action="/cart/add" method="post"><input type="hidden" name="csrf" value="{{ csrf }}"><input type="hidden" name="product_id" value="{{ product.id }}"><label for="quantity">Количество</label><input id="quantity" name="quantity" type="number" min="1" max="10000" value="1" required><button>Добавить в корзину</button></form>{% else %}<p><a class="button" href="account.html">Войти и добавить в корзину</a></p>{% endif %}
+<h2>Характеристики</h2><table><caption>Основные параметры материала</caption><tbody>{% for name,value in product.specs %}<tr><th scope="row">{{ name }}</th><td>{{ value }}</td></tr>{% endfor %}</tbody></table><p class="hint">Цена учебная. Название и параметры: <a href="{{ product.source }}" rel="noopener">карточка поставщика</a>.</p></div></article>
+{% endblock %}

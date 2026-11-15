@@ -131,3 +131,13 @@ address { font-style: normal; }
   .filters, .info-strip { padding: 18px; }
   nav { gap: 8px 18px; }
 }
+
+/* Формы серверного этапа используют прежнюю палитру и видимый фокус. */
+.account-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; }
+.account-grid form, .product-detail form { display: grid; gap: .7rem; max-width: 30rem; }
+.account-grid input, .product-detail input { width: 100%; }
+.notice { padding: 1rem; border: 2px solid var(--green, #245c38); border-radius: .4rem; }
+.cart-table input { width: 6rem; }
+.cart-table button { margin-top: .5rem; }
+.quantity-label { display: block; }
+@media (max-width: 600px) { .account-grid { grid-template-columns: 1fr; } }

@@ -1,0 +1,44 @@
+PRAGMA journal_mode=WAL;
+CREATE TABLE IF NOT EXISTS users (
+ id INTEGER PRIMARY KEY, name TEXT NOT NULL, email TEXT NOT NULL UNIQUE,
+ password_hash TEXT NOT NULL, created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS products (
+ id INTEGER PRIMARY KEY, slug TEXT NOT NULL UNIQUE, name TEXT NOT NULL,
+ short_name TEXT NOT NULL, category TEXT NOT NULL, unit TEXT NOT NULL,
+ price INTEGER NOT NULL CHECK(price > 0), image TEXT NOT NULL,
+ description TEXT NOT NULL, specs TEXT NOT NULL, source TEXT NOT NULL,
+ image_note TEXT NOT NULL DEFAULT ''
+);
+CREATE TABLE IF NOT EXISTS cart_items (
+ user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+ product_id INTEGER NOT NULL REFERENCES products(id),
+ quantity INTEGER NOT NULL CHECK(quantity BETWEEN 1 AND 10000),
+ PRIMARY KEY(user_id, product_id)
+);
+CREATE TABLE IF NOT EXISTS orders (
+ id INTEGER PRIMARY KEY, user_id INTEGER NOT NULL REFERENCES users(id),
+ created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+ status TEXT NOT NULL DEFAULT 'Учебный заказ принят'
+);
+CREATE TABLE IF NOT EXISTS order_items (
+ order_id INTEGER NOT NULL REFERENCES orders(id),
+ product_id INTEGER NOT NULL REFERENCES products(id),
+ name TEXT NOT NULL, unit TEXT NOT NULL, price INTEGER NOT NULL CHECK(price>0),
+ quantity INTEGER NOT NULL CHECK(quantity BETWEEN 1 AND 10000),
+ PRIMARY KEY(order_id,product_id)
+);
+CREATE TABLE IF NOT EXISTS sessions (
+ token_hash TEXT PRIMARY KEY, user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
+ csrf TEXT NOT NULL, expires_at INTEGER NOT NULL
+);
+CREATE TABLE IF NOT EXISTS feedback (
+ id INTEGER PRIMARY KEY, user_id INTEGER NOT NULL REFERENCES users(id),
+ name TEXT NOT NULL, email TEXT NOT NULL, topic TEXT NOT NULL, message TEXT NOT NULL,
+ created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS login_attempts (
+ key TEXT NOT NULL, attempted_at INTEGER NOT NULL
+);
+CREATE INDEX IF NOT EXISTS attempts_time ON login_attempts(attempted_at);
+CREATE INDEX IF NOT EXISTS orders_user ON orders(user_id);

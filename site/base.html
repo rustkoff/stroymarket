@@ -1,0 +1,52 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>{{ title }} — СтройЗапас</title><link rel="stylesheet" href="/style.css"></head><body><a class="skip-link" href="#main">К содержимому</a><header class="site-header">
+<div class="container header-row">
+<a class="brand" href="index.html">
+<img alt="Логотип СтройЗапас: дом из блоков" height="48" src="images/logo.svg" width="48"/>
+<span>
+            СтройЗапас
+            <small>
+              Материалы для вашего ремонта
+            </small>
+</span>
+</a>
+<nav aria-label="Основная навигация">
+<a href="index.html">
+            Главная
+          </a>
+<a href="catalog.html">
+            Каталог
+          </a>
+<a href="cart.html">
+            Корзина
+          </a>
+<a href="contacts.html">
+            Контакты
+          </a>
+<details class="product-menu">
+<summary>
+              Товары
+            </summary>
+<ul>{% for p in menu_products %}<li><a href="{{ p.slug }}.html">{{ p.short_name }}</a></li>{% endfor %}</ul>
+</details>
+<a href="account.html">Личный кабинет</a></nav>
+</div>
+</header><main id="main" class="container">{% if notice %}<p class="notice" role="status">{{ notice }}</p>{% endif %}{% block content %}{% endblock %}</main><footer class="site-footer">
+<div class="container footer-row">
+<p>
+<strong>
+            СтройЗапас
+          </strong>
+<br/>
+          С хорошего материала начинается хороший ремонт.
+        </p>
+<p>
+          Учебный проект · Шустов Ф. А. · ЗН251
+          <br/>
+          Цены и контакты учебные. Названия товаров и фото —
+          <a href="https://petrovich.ru/">
+            Петрович
+          </a>
+          .
+        </p>
+</div>
+</footer>{% block scripts %}{% endblock %}</body></html>

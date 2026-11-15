@@ -29,7 +29,7 @@ feedbackForm.addEventListener('submit', (event) => {
     firstInvalid.focus();
     return;
   }
-  feedbackResult.textContent = 'Проверка пройдена. Сообщение не отправлено и не сохранено: это учебная форма ПР 2.';
+  feedbackForm.submit();
 });
 
 feedbackForm.addEventListener('input', (event) => {
