@@ -1,0 +1,79 @@
+{
+  "base": "https://rustkoff.ru",
+  "checks": [
+    "HTTP → HTTPS 301 с сохранением пути",
+    "HEAD главной: HTTP 200",
+    "HTTPS health: HTTP 200",
+    "HTTPS: профиль закрыт без входа",
+    "HTTPS: регистрация",
+    "HTTPS: некорректный идентификатор отклонён: /api/products/999999999999999999999999999",
+    "HTTPS: некорректный идентификатор отклонён: /api/orders/999999999999999999999999999",
+    "HTTPS: некорректный идентификатор отклонён: /order.html?id=999999999999999999999999999",
+    "HTTPS: некорректный идентификатор отклонён: /order.html?id=%C2%B2",
+    "HTTPS: неверная регистрация отклонена",
+    "HTTPS: повторный email отклонён",
+    "HTTPS: неверное количество отклонено",
+    "HTTPS: неверный CSRF отклонён",
+    "HTTPS: чужой Origin отклонён",
+    "restart: корзина сохранена",
+    "restart: заказ сохранён",
+    "restart: сессия сохранена",
+    "recreate: корзина сохранена",
+    "recreate: заказ сохранён",
+    "recreate: сессия сохранена",
+    "HTTPS: регистрация",
+    "HTTPS: чужой заказ недоступен",
+    "HTTPS: корзины разных пользователей разделены",
+    "HTTPS: выход",
+    "HTTPS: сессия закрыта после выхода",
+    "HTTPS: неправильный пароль отклонён",
+    "HTTPS: правильный пароль принят",
+    "HTTPS: Secure, HttpOnly, SameSite=lax",
+    "Рабочая SQLite: хранится Argon2id, открытого пароля нет",
+    "Сертификат проверен системным CA-хранилищем, имя хоста совпадает"
+  ],
+  "hash_example": {
+    "id": 1,
+    "email": "учебная запись (удалена после проверки)",
+    "password_hash": "$argon2id$v=19$m=65536,t=3,p=4$s4eehf+no0nXb4KAHmPxDQ$d9A8nfflrI/8rgtSM9XLczH80dtxY0C85tD/ie+RjFg"
+  },
+  "tls": {
+    "version": "TLSv1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "notBefore": "Sep 23 20:28:34 2026 GMT",
+    "notAfter": "Dec 22 20:28:33 2026 GMT",
+    "subjectAltName": [
+      [
+        "DNS",
+        "rustkoff.ru"
+      ],
+      [
+        "DNS",
+        "www.rustkoff.ru"
+      ]
+    ],
+    "issuer": [
+      [
+        [
+          "countryName",
+          "US"
+        ]
+      ],
+      [
+        [
+          "organizationName",
+          "Let's Encrypt"
+        ]
+      ],
+      [
+        [
+          "commonName",
+          "YE2"
+        ]
+      ]
+    ],
+    "verified": true
+  },
+  "temporary_accounts_removed": 2,
+  "timestamp_utc": "2026-11-15T01:19:49Z"
+}

@@ -1,0 +1,37 @@
+<!doctype html><html lang="ru"><meta charset="utf-8"><style>body{margin:0;padding:30px;background:#fff;color:#202a23;font:20px Arial}h1{font-size:30px;color:#305b46}h2{font-size:23px}pre{font:17px Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere;background:#f3f6f3;padding:22px;border:1px solid #b9c9bc}table{border-collapse:collapse;width:100%;font-size:19px}td,th{padding:16px;border:1px solid #b9c9bc;text-align:left;overflow-wrap:anywhere}.note{color:#51665b}.box{padding:18px;background:#eef4ef;border:2px solid #305b46;border-radius:8px}svg text{font:18px Arial;fill:#202a23}</style><h1>HTTPS и сертификат опубликованного приложения</h1><p class="box">Проверяемый адрес: <strong>https://rustkoff.ru/</strong><br>GET /health → 200; HTTP → HTTPS → 301</p><pre>{
+  &quot;version&quot;: &quot;TLSv1.3&quot;,
+  &quot;cipher&quot;: &quot;TLS_AES_256_GCM_SHA384&quot;,
+  &quot;notBefore&quot;: &quot;Sep 23 20:28:34 2026 GMT&quot;,
+  &quot;notAfter&quot;: &quot;Dec 22 20:28:33 2026 GMT&quot;,
+  &quot;subjectAltName&quot;: [
+    [
+      &quot;DNS&quot;,
+      &quot;rustkoff.ru&quot;
+    ],
+    [
+      &quot;DNS&quot;,
+      &quot;www.rustkoff.ru&quot;
+    ]
+  ],
+  &quot;issuer&quot;: [
+    [
+      [
+        &quot;countryName&quot;,
+        &quot;US&quot;
+      ]
+    ],
+    [
+      [
+        &quot;organizationName&quot;,
+        &quot;Let&#x27;s Encrypt&quot;
+      ]
+    ],
+    [
+      [
+        &quot;commonName&quot;,
+        &quot;YE2&quot;
+      ]
+    ]
+  ],
+  &quot;verified&quot;: true
+}</pre><p>Проверка выполнена с VDS через публичное доменное имя с системным CA-хранилищем. Не используется отключение проверки сертификата.</p><p class="note">Это сохранённый результат проверки TLS, а не имитация адресной строки браузера.</p></html>

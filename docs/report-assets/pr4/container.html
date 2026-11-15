@@ -1,0 +1,40 @@
+<!doctype html><html lang="ru"><meta charset="utf-8"><style>body{margin:0;padding:30px;background:#fff;color:#202a23;font:20px Arial}h1{font-size:30px;color:#305b46}h2{font-size:23px}pre{font:17px Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere;background:#f3f6f3;padding:22px;border:1px solid #b9c9bc}table{border-collapse:collapse;width:100%;font-size:19px}td,th{padding:16px;border:1px solid #b9c9bc;text-align:left;overflow-wrap:anywhere}.note{color:#51665b}.box{padding:18px;background:#eef4ef;border:2px solid #305b46;border-radius:8px}svg text{font:18px Arial;fill:#202a23}</style><h1>Docker: сборка и запуск СтройЗапас</h1><p>Фактический вывод сборки и состояния контейнера (15.11.2026).</p><pre>#0 building with &quot;default&quot; instance using docker driver
+
+#1 [shop internal] load build definition from Dockerfile
+#1 transferring dockerfile: 735B done
+#1 DONE 0.0s
+
+#2 [shop internal] load metadata for docker.io/library/python:3.13.9-slim-bookworm@sha256:b685a4fa58bb19d1814d78a1ec0f0208f351452724f78b20212c984d6e124a34
+#2 DONE 0.9s
+
+#3 [shop internal] load .dockerignore
+#3 transferring context: 105B done
+#3 DONE 0.0s
+
+#4 [shop 1/7] FROM docker.io/library/python:3.13.9-slim-bookworm@sha256:b685a4fa58bb19d1814d78a1ec0f0208f351452724f78b20212c984d6e124a34
+#4 DONE 0.0s
+
+#5 [shop internal] load build context
+#5 transferring context: 18.92kB done
+#5 DONE 0.0s
+
+
+#8 [shop 4/7] RUN pip install --no-cache-dir -r requirements.txt &amp;&amp; useradd --uid 10001 --create-home shop
+#8 CACHED
+
+#9 [shop 5/7] COPY app ./app
+#9 DONE 0.0s
+
+#10 [shop 6/7] COPY site ./site
+#10 DONE 0.0s
+
+#11 [shop 7/7] RUN mkdir /data &amp;&amp; chown shop:shop /data
+#11 DONE 0.1s
+
+#12 [shop] exporting to image
+#12 exporting layers 0.0s done
+#12 writing image sha256:5d7f1c31645a8a269f2ab43a29addd17244f8c589fb113cdac9fc2c56df08571 done
+#12 naming to docker.io/library/stroymarket:latest done
+#12 DONE 0.0s</pre><pre>NAME                 IMAGE                COMMAND                  SERVICE   CREATED              STATUS                        PORTS
+stroymarket-shop-1   stroymarket:latest   &quot;uvicorn app.main:ap…&quot;   shop      About a minute ago   Up About a minute (healthy)
+</pre></html>

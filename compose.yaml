@@ -1,0 +1,35 @@
+services:
+  shop:
+    image: stroymarket:${IMAGE_TAG:-latest}
+    build:
+      context: .
+      network: host
+    restart: unless-stopped
+    # На этом VDS Docker не меняет firewall и не создаёт мост.
+    network_mode: host
+    command: ["uvicorn", "app.main:app", "--host", "127.0.0.1", "--port", "18080", "--no-proxy-headers"]
+    env_file: .env
+    environment:
+      DATABASE_PATH: /data/shop.sqlite3
+    volumes:
+      - /var/lib/stroymarket:/data
+    user: "10001:10001"
+    read_only: true
+    tmpfs:
+      - /tmp:size=16m,mode=1777
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    mem_limit: 384m
+    cpus: 1.0
+    pids_limit: 80
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:18080/health',timeout=3)"]
+      interval: 30s
+      timeout: 5s
+      start_period: 15s
+      retries: 3
+    logging:
+      driver: local
+      options:
+        max-size: "10m"
+        max-file: "3"

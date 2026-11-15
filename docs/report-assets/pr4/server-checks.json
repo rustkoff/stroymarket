@@ -1,0 +1,56 @@
+{
+  "timestamp_utc": "2026-11-15T01:20:52Z",
+  "firewall_unchanged": true,
+  "firewall6_unchanged": true,
+  "services_pid_and_state_unchanged": true,
+  "nginx_stream_unchanged": true,
+  "ip_forward": "0",
+  "service_states": [
+    {
+      "service": "nginx",
+      "state": "active"
+    },
+    {
+      "service": "x-ui",
+      "state": "active"
+    },
+    {
+      "service": "AdGuardHome",
+      "state": "active"
+    },
+    {
+      "service": "ssh",
+      "state": "active"
+    },
+    {
+      "service": "docker",
+      "state": "active"
+    }
+  ],
+  "shop_http": "200",
+  "api_http": "200",
+  "doh_public_http": "404",
+  "adguard_admin_http": "302",
+  "doh_internal_http": "404",
+  "container": {
+    "image": "sha256:5d7f1c31645a8a269f2ab43a29addd17244f8c589fb113cdac9fc2c56df08571",
+    "user": "10001:10001",
+    "network": "host",
+    "restart": "unless-stopped",
+    "read_only": true,
+    "health": "healthy",
+    "mounts": [
+      {
+        "Source": "/var/lib/stroymarket",
+        "Destination": "/data",
+        "RW": true
+      }
+    ]
+  },
+  "listeners": "State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nLISTEN 0      2048       127.0.0.1:18080      0.0.0.0:*          \n",
+  "nginx_validator": "nginx: the configuration file /etc/nginx/nginx.conf syntax is ok\nnginx: configuration file /etc/nginx/nginx.conf test is successful\n",
+  "certbot_reconfigure": "success; staging renewal verified, production certificate retained",
+  "vpn_client_test": "not performed",
+  "doh_client_test": "not performed; public and internal DoH returned 404 before deployment as well",
+  "external_web_check": "web tool could not open URL; external user-network access not verified"
+}
