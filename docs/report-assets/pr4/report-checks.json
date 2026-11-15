@@ -31,7 +31,7 @@
     "СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ": 41,
     "ПРИЛОЖЕНИЕ А": 43
   },
-  "sha256": "1590cc8a866102fa09c373184ab84cc56aa44e093bfb42debc71509116046f86",
+  "sha256": "51da038f6a6a3af734afae8a404e4d20071aa16b851d233d86f097aefb4a9bd3",
   "figures": 28,
   "tables": 9,
   "page_numbers": [
@@ -257,8 +257,8 @@
       42,
       43
     ],
-    "method": "All PNG pages/contact sheets reviewed; corrected pages reviewed again",
-    "result": "No clipped figures/tables; TOC, captions, listings and page numbers checked"
+    "method": "Previous 43-page render reviewed; edited pages 33,38,39,43 reviewed after rerender",
+    "result": "Headings, TOC, figures, tables and page numbers checked"
   },
   "caption_count": 27
 }
