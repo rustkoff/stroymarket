@@ -1,0 +1,2358 @@
+{
+  "date": "2026-11-15",
+  "browser": "157.0.4341.46",
+  "checks": 558,
+  "results": [
+    {
+      "name": "API real browser fetch, successful CORS, no interception",
+      "passed": true
+    },
+    {
+      "name": "EUR conversion",
+      "passed": true
+    },
+    {
+      "name": "Product currency price update",
+      "passed": true
+    },
+    {
+      "name": "All 12 products remain available",
+      "passed": true
+    },
+    {
+      "name": "No results message",
+      "passed": true
+    },
+    {
+      "name": "Case and whitespace search",
+      "passed": true
+    },
+    {
+      "name": "Search and category intersection",
+      "passed": true
+    },
+    {
+      "name": "Category has five sheet products",
+      "passed": true
+    },
+    {
+      "name": "price-asc",
+      "passed": true
+    },
+    {
+      "name": "price-desc",
+      "passed": true
+    },
+    {
+      "name": "Reset restores default order",
+      "passed": true
+    },
+    {
+      "name": "drywall: 9, reserve 0 => 3",
+      "passed": true
+    },
+    {
+      "name": "drywall: 9, reserve 10 => 4",
+      "passed": true
+    },
+    {
+      "name": "drywall-knauf: 2,7, reserve 0 => 3",
+      "passed": true
+    },
+    {
+      "name": "drywall-knauf: 2.700001, reserve 0 => 4",
+      "passed": true
+    },
+    {
+      "name": "drywall-multicomfort: 3, reserve 0 => 1",
+      "passed": true
+    },
+    {
+      "name": "drywall-wind: 3.6, reserve 0 => 1",
+      "passed": true
+    },
+    {
+      "name": "plywood: 2.325625, reserve 0 => 1",
+      "passed": true
+    },
+    {
+      "name": "insulation: 9, reserve 0 => 1",
+      "passed": true
+    },
+    {
+      "name": "insulation: 9.000001, reserve 0 => 2",
+      "passed": true
+    },
+    {
+      "name": "board: 0.045, reserve 0 => 1",
+      "passed": true
+    },
+    {
+      "name": "board: 0.045001, reserve 0 => 2",
+      "passed": true
+    },
+    {
+      "name": "block: 0.046875, reserve 0 => 2",
+      "passed": true
+    },
+    {
+      "name": "brick: 0.0039, reserve 0 => 2",
+      "passed": true
+    },
+    {
+      "name": "brick: 10000, reserve 50 => 7692308",
+      "passed": true
+    },
+    {
+      "name": "drywall: 0.000001, reserve 0 => 1",
+      "passed": true
+    },
+    {
+      "name": "Invalid amount: ",
+      "passed": true
+    },
+    {
+      "name": "Invalid amount: 0",
+      "passed": true
+    },
+    {
+      "name": "Invalid amount: -1",
+      "passed": true
+    },
+    {
+      "name": "Invalid amount: 10000.000001",
+      "passed": true
+    },
+    {
+      "name": "Invalid amount: abc",
+      "passed": true
+    },
+    {
+      "name": "Invalid amount: 1e3",
+      "passed": true
+    },
+    {
+      "name": "Invalid amount: 1,2.3",
+      "passed": true
+    },
+    {
+      "name": "Invalid amount: 1.1234567",
+      "passed": true
+    },
+    {
+      "name": "Invalid amount: Infinity",
+      "passed": true
+    },
+    {
+      "name": "Invalid reserve: ",
+      "passed": true
+    },
+    {
+      "name": "Invalid reserve: -1",
+      "passed": true
+    },
+    {
+      "name": "Invalid reserve: 50.01",
+      "passed": true
+    },
+    {
+      "name": "Invalid reserve: abc",
+      "passed": true
+    },
+    {
+      "name": "Invalid reserve: 1.123",
+      "passed": true
+    },
+    {
+      "name": "Offline clears conversion",
+      "passed": true
+    },
+    {
+      "name": "Catalog works offline",
+      "passed": true
+    },
+    {
+      "name": "board: 0.09, reserve 0 => 2",
+      "passed": true
+    },
+    {
+      "name": "Loading state",
+      "passed": true
+    },
+    {
+      "name": "Recovery after network failure",
+      "passed": true
+    },
+    {
+      "name": "Injected API http handled",
+      "passed": true
+    },
+    {
+      "name": "Injected API json handled",
+      "passed": true
+    },
+    {
+      "name": "Injected API schema handled",
+      "passed": true
+    },
+    {
+      "name": "Injected API timeout handled",
+      "passed": true
+    },
+    {
+      "name": "Feedback three inline errors",
+      "passed": true
+    },
+    {
+      "name": "Focus first invalid field",
+      "passed": true
+    },
+    {
+      "name": "Whitespace and malformed email rejected",
+      "passed": true
+    },
+    {
+      "name": "Valid feedback explicitly not sent",
+      "passed": true
+    },
+    {
+      "name": "No form navigation request",
+      "passed": true
+    },
+    {
+      "name": "Edit clears stale success",
+      "passed": true
+    },
+    {
+      "name": "Tab from name to email",
+      "passed": true
+    },
+    {
+      "name": "Tab to topic",
+      "passed": true
+    },
+    {
+      "name": "Keyboard feedback submission",
+      "passed": true
+    },
+    {
+      "name": "Keyboard product menu",
+      "passed": true
+    },
+    {
+      "name": "360px no overflow: block.html",
+      "passed": true
+    },
+    {
+      "name": "360px no overflow: board.html",
+      "passed": true
+    },
+    {
+      "name": "360px no overflow: brick.html",
+      "passed": true
+    },
+    {
+      "name": "360px no overflow: cart.html",
+      "passed": true
+    },
+    {
+      "name": "360px no overflow: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "360px no overflow: cement.html",
+      "passed": true
+    },
+    {
+      "name": "360px no overflow: contacts.html",
+      "passed": true
+    },
+    {
+      "name": "360px no overflow: drywall-knauf.html",
+      "passed": true
+    },
+    {
+      "name": "360px no overflow: drywall-multicomfort.html",
+      "passed": true
+    },
+    {
+      "name": "360px no overflow: drywall-wind.html",
+      "passed": true
+    },
+    {
+      "name": "360px no overflow: drywall.html",
+      "passed": true
+    },
+    {
+      "name": "360px no overflow: glue-bergauf.html",
+      "passed": true
+    },
+    {
+      "name": "360px no overflow: glue.html",
+      "passed": true
+    },
+    {
+      "name": "360px no overflow: index.html",
+      "passed": true
+    },
+    {
+      "name": "360px no overflow: insulation.html",
+      "passed": true
+    },
+    {
+      "name": "360px no overflow: plywood.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource block.html: style.css",
+      "passed": true
+    },
+    {
+      "name": "Local resource block.html: #main",
+      "passed": true
+    },
+    {
+      "name": "Anchor #main",
+      "passed": true
+    },
+    {
+      "name": "Local resource block.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource block.html: images/logo.svg",
+      "passed": true
+    },
+    {
+      "name": "Local resource block.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource block.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource block.html: cart.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource block.html: contacts.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource block.html: cement.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource block.html: glue.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource block.html: glue-bergauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource block.html: brick.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource block.html: block.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource block.html: drywall.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource block.html: drywall-knauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource block.html: drywall-multicomfort.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource block.html: drywall-wind.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource block.html: plywood.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource block.html: board.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource block.html: insulation.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource block.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource block.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource block.html: images/block.webp",
+      "passed": true
+    },
+    {
+      "name": "Local resource block.html: cart.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource block.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource board.html: style.css",
+      "passed": true
+    },
+    {
+      "name": "Local resource board.html: #main",
+      "passed": true
+    },
+    {
+      "name": "Anchor #main",
+      "passed": true
+    },
+    {
+      "name": "Local resource board.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource board.html: images/logo.svg",
+      "passed": true
+    },
+    {
+      "name": "Local resource board.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource board.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource board.html: cart.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource board.html: contacts.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource board.html: cement.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource board.html: glue.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource board.html: glue-bergauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource board.html: brick.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource board.html: block.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource board.html: drywall.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource board.html: drywall-knauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource board.html: drywall-multicomfort.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource board.html: drywall-wind.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource board.html: plywood.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource board.html: board.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource board.html: insulation.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource board.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource board.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource board.html: images/board.webp",
+      "passed": true
+    },
+    {
+      "name": "Local resource board.html: cart.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource board.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource brick.html: style.css",
+      "passed": true
+    },
+    {
+      "name": "Local resource brick.html: #main",
+      "passed": true
+    },
+    {
+      "name": "Anchor #main",
+      "passed": true
+    },
+    {
+      "name": "Local resource brick.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource brick.html: images/logo.svg",
+      "passed": true
+    },
+    {
+      "name": "Local resource brick.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource brick.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource brick.html: cart.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource brick.html: contacts.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource brick.html: cement.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource brick.html: glue.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource brick.html: glue-bergauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource brick.html: brick.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource brick.html: block.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource brick.html: drywall.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource brick.html: drywall-knauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource brick.html: drywall-multicomfort.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource brick.html: drywall-wind.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource brick.html: plywood.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource brick.html: board.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource brick.html: insulation.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource brick.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource brick.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource brick.html: images/brick.webp",
+      "passed": true
+    },
+    {
+      "name": "Local resource brick.html: cart.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource brick.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cart.html: style.css",
+      "passed": true
+    },
+    {
+      "name": "Local resource cart.html: #main",
+      "passed": true
+    },
+    {
+      "name": "Anchor #main",
+      "passed": true
+    },
+    {
+      "name": "Local resource cart.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cart.html: images/logo.svg",
+      "passed": true
+    },
+    {
+      "name": "Local resource cart.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cart.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cart.html: cart.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cart.html: contacts.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cart.html: cement.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cart.html: glue.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cart.html: glue-bergauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cart.html: brick.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cart.html: block.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cart.html: drywall.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cart.html: drywall-knauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cart.html: drywall-multicomfort.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cart.html: drywall-wind.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cart.html: plywood.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cart.html: board.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cart.html: insulation.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cart.html: cement.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cart.html: brick.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cart.html: drywall.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cart.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: style.css",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: js/catalog.js",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: js/calculator.js",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: js/currency.js",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: #main",
+      "passed": true
+    },
+    {
+      "name": "Anchor #main",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: images/logo.svg",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: cart.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: contacts.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: cement.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: glue.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: glue-bergauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: brick.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: block.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: drywall.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: drywall-knauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: drywall-multicomfort.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: drywall-wind.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: plywood.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: board.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: insulation.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: #calculator",
+      "passed": true
+    },
+    {
+      "name": "Anchor #calculator",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: cement.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: images/cement.webp",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: cement.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: cement.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: glue.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: images/glue_1.webp",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: glue.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: glue.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: glue-bergauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: images/glue_2.webp",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: glue-bergauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: glue-bergauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: brick.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: images/brick.webp",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: brick.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: brick.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: block.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: images/block.webp",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: block.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: block.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: drywall.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: images/drywall_1.webp",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: drywall.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: drywall.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: drywall-knauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: images/drywall_2.webp",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: drywall-knauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: drywall-knauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: drywall-multicomfort.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: images/drywall_3.webp",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: drywall-multicomfort.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: drywall-multicomfort.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: drywall-wind.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: images/drywall_4.webp",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: drywall-wind.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: drywall-wind.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: plywood.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: images/plywood.jpg",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: plywood.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: plywood.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: board.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: images/board.webp",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: board.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: board.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: insulation.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: images/insulation.webp",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: insulation.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource catalog.html: insulation.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cement.html: style.css",
+      "passed": true
+    },
+    {
+      "name": "Local resource cement.html: #main",
+      "passed": true
+    },
+    {
+      "name": "Anchor #main",
+      "passed": true
+    },
+    {
+      "name": "Local resource cement.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cement.html: images/logo.svg",
+      "passed": true
+    },
+    {
+      "name": "Local resource cement.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cement.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cement.html: cart.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cement.html: contacts.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cement.html: cement.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cement.html: glue.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cement.html: glue-bergauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cement.html: brick.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cement.html: block.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cement.html: drywall.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cement.html: drywall-knauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cement.html: drywall-multicomfort.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cement.html: drywall-wind.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cement.html: plywood.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cement.html: board.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cement.html: insulation.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cement.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cement.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cement.html: images/cement.webp",
+      "passed": true
+    },
+    {
+      "name": "Local resource cement.html: cart.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource cement.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource contacts.html: style.css",
+      "passed": true
+    },
+    {
+      "name": "Local resource contacts.html: js/feedback.js",
+      "passed": true
+    },
+    {
+      "name": "Local resource contacts.html: #main",
+      "passed": true
+    },
+    {
+      "name": "Anchor #main",
+      "passed": true
+    },
+    {
+      "name": "Local resource contacts.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource contacts.html: images/logo.svg",
+      "passed": true
+    },
+    {
+      "name": "Local resource contacts.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource contacts.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource contacts.html: cart.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource contacts.html: contacts.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource contacts.html: cement.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource contacts.html: glue.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource contacts.html: glue-bergauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource contacts.html: brick.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource contacts.html: block.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource contacts.html: drywall.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource contacts.html: drywall-knauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource contacts.html: drywall-multicomfort.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource contacts.html: drywall-wind.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource contacts.html: plywood.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource contacts.html: board.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource contacts.html: insulation.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-knauf.html: style.css",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-knauf.html: #main",
+      "passed": true
+    },
+    {
+      "name": "Anchor #main",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-knauf.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-knauf.html: images/logo.svg",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-knauf.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-knauf.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-knauf.html: cart.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-knauf.html: contacts.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-knauf.html: cement.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-knauf.html: glue.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-knauf.html: glue-bergauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-knauf.html: brick.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-knauf.html: block.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-knauf.html: drywall.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-knauf.html: drywall-knauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-knauf.html: drywall-multicomfort.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-knauf.html: drywall-wind.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-knauf.html: plywood.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-knauf.html: board.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-knauf.html: insulation.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-knauf.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-knauf.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-knauf.html: images/drywall_2.webp",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-knauf.html: cart.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-knauf.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-multicomfort.html: style.css",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-multicomfort.html: #main",
+      "passed": true
+    },
+    {
+      "name": "Anchor #main",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-multicomfort.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-multicomfort.html: images/logo.svg",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-multicomfort.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-multicomfort.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-multicomfort.html: cart.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-multicomfort.html: contacts.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-multicomfort.html: cement.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-multicomfort.html: glue.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-multicomfort.html: glue-bergauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-multicomfort.html: brick.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-multicomfort.html: block.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-multicomfort.html: drywall.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-multicomfort.html: drywall-knauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-multicomfort.html: drywall-multicomfort.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-multicomfort.html: drywall-wind.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-multicomfort.html: plywood.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-multicomfort.html: board.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-multicomfort.html: insulation.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-multicomfort.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-multicomfort.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-multicomfort.html: images/drywall_3.webp",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-multicomfort.html: cart.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-multicomfort.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-wind.html: style.css",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-wind.html: #main",
+      "passed": true
+    },
+    {
+      "name": "Anchor #main",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-wind.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-wind.html: images/logo.svg",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-wind.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-wind.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-wind.html: cart.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-wind.html: contacts.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-wind.html: cement.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-wind.html: glue.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-wind.html: glue-bergauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-wind.html: brick.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-wind.html: block.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-wind.html: drywall.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-wind.html: drywall-knauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-wind.html: drywall-multicomfort.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-wind.html: drywall-wind.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-wind.html: plywood.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-wind.html: board.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-wind.html: insulation.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-wind.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-wind.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-wind.html: images/drywall_4.webp",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-wind.html: cart.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall-wind.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall.html: style.css",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall.html: #main",
+      "passed": true
+    },
+    {
+      "name": "Anchor #main",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall.html: images/logo.svg",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall.html: cart.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall.html: contacts.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall.html: cement.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall.html: glue.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall.html: glue-bergauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall.html: brick.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall.html: block.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall.html: drywall.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall.html: drywall-knauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall.html: drywall-multicomfort.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall.html: drywall-wind.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall.html: plywood.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall.html: board.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall.html: insulation.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall.html: images/drywall_1.webp",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall.html: cart.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource drywall.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue-bergauf.html: style.css",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue-bergauf.html: #main",
+      "passed": true
+    },
+    {
+      "name": "Anchor #main",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue-bergauf.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue-bergauf.html: images/logo.svg",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue-bergauf.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue-bergauf.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue-bergauf.html: cart.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue-bergauf.html: contacts.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue-bergauf.html: cement.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue-bergauf.html: glue.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue-bergauf.html: glue-bergauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue-bergauf.html: brick.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue-bergauf.html: block.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue-bergauf.html: drywall.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue-bergauf.html: drywall-knauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue-bergauf.html: drywall-multicomfort.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue-bergauf.html: drywall-wind.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue-bergauf.html: plywood.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue-bergauf.html: board.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue-bergauf.html: insulation.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue-bergauf.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue-bergauf.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue-bergauf.html: images/glue_2.webp",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue-bergauf.html: cart.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue-bergauf.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue.html: style.css",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue.html: #main",
+      "passed": true
+    },
+    {
+      "name": "Anchor #main",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue.html: images/logo.svg",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue.html: cart.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue.html: contacts.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue.html: cement.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue.html: glue.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue.html: glue-bergauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue.html: brick.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue.html: block.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue.html: drywall.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue.html: drywall-knauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue.html: drywall-multicomfort.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue.html: drywall-wind.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue.html: plywood.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue.html: board.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue.html: insulation.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue.html: images/glue_1.webp",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue.html: cart.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource glue.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: style.css",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: #main",
+      "passed": true
+    },
+    {
+      "name": "Anchor #main",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: images/logo.svg",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: cart.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: contacts.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: cement.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: glue.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: glue-bergauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: brick.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: block.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: drywall.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: drywall-knauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: drywall-multicomfort.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: drywall-wind.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: plywood.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: board.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: insulation.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: contacts.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: cement.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: images/cement.webp",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: cement.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: cement.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: glue.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: images/glue_1.webp",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: glue.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: glue.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: brick.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: images/brick.webp",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: brick.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: brick.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: drywall.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: images/drywall_1.webp",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: drywall.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: drywall.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: board.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: images/board.webp",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: board.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: board.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: insulation.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: images/insulation.webp",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: insulation.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource index.html: insulation.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource insulation.html: style.css",
+      "passed": true
+    },
+    {
+      "name": "Local resource insulation.html: #main",
+      "passed": true
+    },
+    {
+      "name": "Anchor #main",
+      "passed": true
+    },
+    {
+      "name": "Local resource insulation.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource insulation.html: images/logo.svg",
+      "passed": true
+    },
+    {
+      "name": "Local resource insulation.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource insulation.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource insulation.html: cart.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource insulation.html: contacts.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource insulation.html: cement.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource insulation.html: glue.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource insulation.html: glue-bergauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource insulation.html: brick.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource insulation.html: block.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource insulation.html: drywall.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource insulation.html: drywall-knauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource insulation.html: drywall-multicomfort.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource insulation.html: drywall-wind.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource insulation.html: plywood.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource insulation.html: board.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource insulation.html: insulation.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource insulation.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource insulation.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource insulation.html: images/insulation.webp",
+      "passed": true
+    },
+    {
+      "name": "Local resource insulation.html: cart.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource insulation.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource plywood.html: style.css",
+      "passed": true
+    },
+    {
+      "name": "Local resource plywood.html: #main",
+      "passed": true
+    },
+    {
+      "name": "Anchor #main",
+      "passed": true
+    },
+    {
+      "name": "Local resource plywood.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource plywood.html: images/logo.svg",
+      "passed": true
+    },
+    {
+      "name": "Local resource plywood.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource plywood.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource plywood.html: cart.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource plywood.html: contacts.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource plywood.html: cement.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource plywood.html: glue.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource plywood.html: glue-bergauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource plywood.html: brick.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource plywood.html: block.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource plywood.html: drywall.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource plywood.html: drywall-knauf.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource plywood.html: drywall-multicomfort.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource plywood.html: drywall-wind.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource plywood.html: plywood.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource plywood.html: board.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource plywood.html: insulation.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource plywood.html: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource plywood.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource plywood.html: images/plywood.jpg",
+      "passed": true
+    },
+    {
+      "name": "Local resource plywood.html: cart.html",
+      "passed": true
+    },
+    {
+      "name": "Local resource plywood.html: catalog.html",
+      "passed": true
+    },
+    {
+      "name": "No uncaught JavaScript errors",
+      "passed": true
+    },
+    {
+      "name": "No local HTTP errors",
+      "passed": true
+    }
+  ],
+  "apiText": "Курсы загружены. Дата курса: 14.11.2026.",
+  "apiResponses": [
+    {
+      "url": "https://www.cbr-xml-daily.ru/daily_json.js",
+      "status": 200,
+      "headers": {
+        "access-control-allow-origin": "*",
+        "access-control-max-age": "31536000",
+        "cache-control": "max-age=7200",
+        "content-encoding": "gzip",
+        "content-length": "2143",
+        "content-type": "application/javascript; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 00:15:01 GMT",
+        "expires": "Sun, 15 Nov 2026 02:15:01 GMT",
+        "last-modified": "Sat, 14 Nov 2026 17:00:00 GMT",
+        "link": "<https://www.cbr-xml-daily.ru/>; rel=\"canonical\"",
+        "referrer-policy": "origin",
+        "server": "nginx/1.22.1",
+        "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+        "vary": "Accept-Encoding"
+      }
+    },
+    {
+      "url": "https://www.cbr-xml-daily.ru/daily_json.js",
+      "status": 200,
+      "headers": {
+        "access-control-allow-origin": "*",
+        "access-control-max-age": "31536000",
+        "cache-control": "max-age=7200",
+        "content-encoding": "gzip",
+        "content-length": "2143",
+        "content-type": "application/javascript; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 00:15:06 GMT",
+        "expires": "Sun, 15 Nov 2026 02:15:06 GMT",
+        "last-modified": "Sat, 14 Nov 2026 17:00:00 GMT",
+        "link": "<https://www.cbr-xml-daily.ru/>; rel=\"canonical\"",
+        "referrer-policy": "origin",
+        "server": "nginx/1.22.1",
+        "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+        "vary": "Accept-Encoding"
+      }
+    },
+    {
+      "url": "https://www.cbr-xml-daily.ru/daily_json.js",
+      "status": 503,
+      "headers": {
+        "access-control-allow-origin": "http://localhost:8000",
+        "content-length": "30",
+        "content-type": "application/json",
+        "vary": "Origin",
+        "access-control-allow-credentials": "true"
+      }
+    },
+    {
+      "url": "https://www.cbr-xml-daily.ru/daily_json.js",
+      "status": 200,
+      "headers": {
+        "access-control-allow-origin": "http://localhost:8000",
+        "content-length": "7",
+        "content-type": "application/json",
+        "vary": "Origin",
+        "access-control-allow-credentials": "true"
+      }
+    },
+    {
+      "url": "https://www.cbr-xml-daily.ru/daily_json.js",
+      "status": 200,
+      "headers": {
+        "access-control-allow-origin": "http://localhost:8000",
+        "content-length": "30",
+        "content-type": "application/json",
+        "vary": "Origin",
+        "access-control-allow-credentials": "true"
+      }
+    },
+    {
+      "url": "https://www.cbr-xml-daily.ru/daily_json.js",
+      "status": 200,
+      "headers": {
+        "access-control-allow-origin": "*",
+        "access-control-max-age": "31536000",
+        "cache-control": "max-age=7200",
+        "content-encoding": "gzip",
+        "content-length": "2143",
+        "content-type": "application/javascript; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 00:15:23 GMT",
+        "expires": "Sun, 15 Nov 2026 02:15:23 GMT",
+        "last-modified": "Sat, 14 Nov 2026 17:00:00 GMT",
+        "link": "<https://www.cbr-xml-daily.ru/>; rel=\"canonical\"",
+        "referrer-policy": "origin",
+        "server": "nginx/1.22.1",
+        "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+        "vary": "Accept-Encoding"
+      }
+    },
+    {
+      "url": "https://www.cbr-xml-daily.ru/daily_json.js",
+      "status": 200,
+      "headers": {
+        "access-control-allow-origin": "*",
+        "access-control-max-age": "31536000",
+        "cache-control": "max-age=7200",
+        "content-encoding": "gzip",
+        "content-length": "2143",
+        "content-type": "application/javascript; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 00:15:24 GMT",
+        "expires": "Sun, 15 Nov 2026 02:15:24 GMT",
+        "last-modified": "Sat, 14 Nov 2026 17:00:00 GMT",
+        "link": "<https://www.cbr-xml-daily.ru/>; rel=\"canonical\"",
+        "referrer-policy": "origin",
+        "server": "nginx/1.22.1",
+        "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+        "vary": "Accept-Encoding"
+      }
+    }
+  ],
+  "errors": [],
+  "failedLocal": [],
+  "linkCount": 464
+}
